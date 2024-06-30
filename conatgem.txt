@@ -1,0 +1,25 @@
+# Contador de vogais e consoantes
+frase = "Frase de exemplo para contar vogais e consoantes."
+
+# Convertendo todas as letras para minúsculas para simplificar a contagem
+frase = frase.lower()
+
+# Inicializando contadores
+vogais = 0
+consoantes = 0
+
+# Definindo vogais (pode ser uma string ou uma lista de caracteres)
+vogais_set = "aeiou"
+
+# Loop através de cada caractere na frase
+for char in frase:
+    if char.isalpha():  # Verifica se o caractere é uma letra
+        if char in vogais_set:
+            vogais += 1
+        else:
+            consoantes += 1
+
+# Imprimir o resultado
+print("Número de vogais:", vogais)
+print("Número de consoantes:", consoantes)
+
